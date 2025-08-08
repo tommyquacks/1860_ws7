@@ -1,0 +1,9 @@
+Chip decoder201498887 {
+  In A, B, C, D;
+  Out b;
+
+  Parts:
+  Not (in=A, out=nA);
+  Not (in=B, out=nB);
+  Not (in=C, out=nC);
+  Not (in=D, out=nD);
