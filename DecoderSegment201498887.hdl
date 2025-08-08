@@ -1,4 +1,4 @@
-Chip decoder201498887 {
+Chip DecoderSegment201498887 {
   In A, B, C, D;
   Out b;
 
