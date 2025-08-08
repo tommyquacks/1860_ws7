@@ -2,20 +2,20 @@ CHIP DecoderSegment201498887 {
   IN A, B, C, D;
   OUT b;
 
-  Parts:
-  Not (in=A, out=nA);
-  Not (in=B, out=nB);
-  Not (in=C, out=nC);
-  Not (in=D, out=nD);
+  PARTS:
+  NOT (in=A, out=nA);
+  NOT (in=B, out=nB);
+  NOT (in=C, out=nC);
+  NOT (in=D, out=nD);
 
-  And(a=A, b=B, out=b1);
-  And(a=A, b=C, out=b2);
-  And(a=b2, b=D, out=b3);
-  And(a=C, b=nD, out=b4);
-  And(a=nC, b=nD, out=b5);
-  And(a=b5, b=nB, out=b6);
+  AND(a=A, b=B, out=b1);
+  AND(a=A, b=C, out=b2);
+  AND(a=b2, b=D, out=b3);
+  AND(a=C, b=nD, out=b4);
+  AND(a=nC, b=nD, out=b5);
+  AND(a=b5, b=nB, out=b6);
 
-  Or(a=b1, b=b4, out=b7);
-  Or(a=b3, b=b6, out=b8);
-  Or(a=b7, b=b8, out=b);
+  OR(a=b1, b=b4, out=b7);
+  OR(a=b3, b=b6, out=b8);
+  OR(a=b7, b=b8, out=b);
 }
